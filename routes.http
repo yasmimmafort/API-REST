@@ -1,0 +1,32 @@
+POST http://localhost:3333/summarization
+Content-Type: application/json
+
+{
+	"title": "learn about node.js",
+	"link": "goble.com",
+	"startAt": 60,
+	"endAt": 300
+}
+###
+
+GET http://localhost:3333/summarization
+
+###
+
+GET http://localhost:3333/summarization?search=
+
+###
+
+PUT http://localhost:3333/summarization/
+Content-Type: application/json
+
+{
+	"title":"atualizando post",
+	"link": "www.coca.com",
+	"startAt": 10,
+	"endAt": 200
+}
+
+###
+
+DELETE http://localhost:3333/summarization/
